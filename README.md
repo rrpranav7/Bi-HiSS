@@ -1,6 +1,6 @@
 # [BMVC 2026 Submission] Repository for Bi-HiSS Mamba 2D: A Spatially Enhanced Mamba Module for Earth Observation
 
-This repository contains the source code of [Bi-HiSS Mamba 2D: A Spatially Enhanced Mamba Module for Earth Observation](https://openaccess.thecvf.com/content/CVPR2023/html/Tarasiou_ViTs_for_SITS_Vision_Transformers_for_Satellite_Image_Time_Series_CVPR_2023_paper.html)
+This repository contains the source code of [Bi-HiSS Mamba 2D: A Spatially Enhanced Mamba Module for Earth Observation](https://openaccess.thecvf.com/content/CVPR2023/html/Tarasiou_ViTs_for_SITS_Vision_Transformers_for_Satellite_Image_Time_Series_CVPR_2023_paper.html).
 
 ## Environment Configuration 
 
@@ -8,7 +8,15 @@ Please see the DeepSatModels main [README](https://github.com/michaeltrs/DeepSat
 
 ## Alternative Configuration
 
-It is sufficient to follow the instructions from [Exact Repository](https://github.com/MiSsU-HH/Exact) to see how to install libraries easier. 
+It is sufficient to do
+
+```bash
+pip install -r requirements.txt
+```
+
+If this does not work, start by performing this command on the requirements.txt from [Exact](https://github.com/MiSsU-HH/Exact/blob/master/requirements.txt) and slowly add each required module by the code.
+
+**Note**: Apart from the PyYAML version in the requirements.txt, you can use the latest version of each of the mentioned modules. I have experimented with running on RTX 5080, and it did work.
 
 ## Dataset Preparation
 
@@ -23,4 +31,4 @@ T31TFM_1618 - https://github.com/michaeltrs/DeepSatModels/tree/main/data#t31tfm_
 
 ## Acknowledgement
 
-This project is built upon [TSViT](https://github.com/michaeltrs/DeepSatModels) and [PASTIS](https://github.com/VSainteuf/pastis-benchmark)
+This project is built upon [Exact](https://github.com/MiSsU-HH/Exact), [TSViT](https://github.com/michaeltrs/DeepSatModels) and [PASTIS](https://github.com/VSainteuf/pastis-benchmark).
