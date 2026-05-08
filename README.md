@@ -41,8 +41,6 @@ MTLCC (Germany) - https://github.com/michaeltrs/DeepSatModels/tree/main/data#mtl
 
 T31TFM_1618 - https://github.com/michaeltrs/DeepSatModels/tree/main/data#t31tfm_1618-dataset-france
 
-## Additional Libraries for Mamba
-
 
 ## Acknowledgement
 
