@@ -6,7 +6,7 @@ This repository contains the source code of [Bi-HiSS Mamba 2D: A Spatially Enhan
 
 Please see the DeepSatModels main [README](https://github.com/michaeltrs/DeepSatModels/blob/main/README.md) and [TSViT README](https://github.com/michaeltrs/DeepSatModels/blob/main/README_TSVIT.md) for further details.
 
-## Alternative Configuration
+## Additional and Alternative Configuration
 
 It is sufficient to do
 
