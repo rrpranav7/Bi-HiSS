@@ -14,9 +14,24 @@ It is sufficient to do
 pip install -r requirements.txt
 ```
 
-If this does not work, start by performing this command on the requirements.txt from [Exact](https://github.com/MiSsU-HH/Exact/blob/master/requirements.txt) and slowly add each required module by the code.
+If this does not work, start by running this command on the requirements.txt file from  [Exact](https://github.com/MiSsU-HH/Exact/blob/master/requirements.txt) and slowly add each required module using the code.
 
-**Note**: Apart from the PyYAML version in the requirements.txt, you can use the latest version of each of the mentioned modules. I have experimented with running on RTX 5080, and it did work.
+**Note**: 
+1. Mamba modules are crucial; ensure the wheel is downloaded by first installing PyTorch when the GPU is activated, so it can use CUDA. The rule of thumb is just to start with
+
+```bash
+pip install torch torchvision
+```
+
+Do not specify the version and then do 
+
+```bash
+pip install mamba-ssm
+```
+
+Please see the issues from mamba-ssm [GitHub](https://github.com/state-spaces/mamba/issues) to help you in downloading this.
+
+2. Apart from the PyYAML version in the requirements.txt, you can use the latest version of each of the mentioned modules. I have experimented with running on RTX 5080, and it did work.
 
 ## Dataset Preparation
 
