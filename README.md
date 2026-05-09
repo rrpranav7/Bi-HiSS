@@ -37,6 +37,8 @@ Please see the issues from mamba-ssm [GitHub](https://github.com/state-spaces/ma
 
 2. Apart from the PyYAML version in the requirements.txt, you can use the latest version of each of the mentioned modules. I have experimented with running on RTX 5080, and it did work.
 
+3. As mentioned in the paper, object classification doesn't work. Please see this [issue](https://github.com/michaeltrs/DeepSatModels/issues/18) for further details.
+
 ## Dataset Preparation
 
 PASTIS - https://github.com/michaeltrs/DeepSatModels/issues/2
@@ -44,8 +46,6 @@ PASTIS - https://github.com/michaeltrs/DeepSatModels/issues/2
 MTLCC (Germany) - https://github.com/michaeltrs/DeepSatModels/tree/main/data#mtlcc-dataset-germany
 
 T31TFM_1618 - https://github.com/michaeltrs/DeepSatModels/tree/main/data#t31tfm_1618-dataset-france
-
-3. As mentioned in the paper, object classification doesn't work. Please see this [issue](https://github.com/michaeltrs/DeepSatModels/issues/18) for further details.
 
 ## Acknowledgement
 
