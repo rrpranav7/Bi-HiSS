@@ -12,6 +12,12 @@ pip install -r requirements.txt
 
 If this does not work, start by running this command on the requirements.txt file from  [Exact](https://github.com/MiSsU-HH/Exact/blob/master/requirements.txt) and slowly add each required module using the code.
 
+To train for semantic segmentation, execute the following command, replacing ** with the appropriate directory names:
+
+```bash
+python train_and_eval/segmentation_training_transf.py --config_file configs/**/TSViT.yaml --gpu_ids 0,1
+```
+
 Please see the DeepSatModels main [README](https://github.com/michaeltrs/DeepSatModels/blob/main/README.md) and [TSViT README](https://github.com/michaeltrs/DeepSatModels/blob/main/README_TSVIT.md) for further details.
 
 **Note**: 
@@ -39,6 +45,7 @@ MTLCC (Germany) - https://github.com/michaeltrs/DeepSatModels/tree/main/data#mtl
 
 T31TFM_1618 - https://github.com/michaeltrs/DeepSatModels/tree/main/data#t31tfm_1618-dataset-france
 
+3. As mentioned in the paper, object classification doesn't work. Please see this [issue](https://github.com/michaeltrs/DeepSatModels/issues/18) for further details.
 
 ## Acknowledgement
 
