@@ -37,7 +37,7 @@ Please see the issues from mamba-ssm [GitHub](https://github.com/state-spaces/ma
 
 2. Apart from the PyYAML version in the requirements.txt, you can use the latest version of each of the mentioned modules. I have experimented with running on RTX 5080, and it did work.
 
-3. As mentioned in the paper, object classification doesn't work. Please see this [issue](https://github.com/michaeltrs/DeepSatModels/issues/18) for further details.
+3. Although this paper talks about semantic segmentation, it can work for object classification. However, it is not configured properly in the initial script. Please see this [issue](https://github.com/michaeltrs/DeepSatModels/issues/18) for further details.
 
 ## Dataset Preparation
 
