@@ -15,7 +15,7 @@ If this does not work, start by running this command on the requirements.txt fil
 To train for semantic segmentation, execute the following command, replacing ** with the appropriate directory names:
 
 ```bash
-python train_and_eval/segmentation_training_transf.py --config_file configs/**/TSViT.yaml --gpu_ids 0,1
+python train_and_eval/segmentation_training_transf.py --config_file configs/**/CMTSViT.yaml --gpu_ids 0,1
 ```
 
 Please see the DeepSatModels main [README](https://github.com/michaeltrs/DeepSatModels/blob/main/README.md) and [TSViT README](https://github.com/michaeltrs/DeepSatModels/blob/main/README_TSVIT.md) for further details.
