@@ -1,12 +1,8 @@
-# [BMVC 2026 Submission] Repository for Bi-HiSS Mamba 2D: A Spatially Enhanced Mamba Module for Earth Observation
+# :snake: [BMVC 2026 Submission] Repository for Bi-HiSS Mamba 2D: A Spatially Enhanced Mamba Module for Earth Observation
 
 This repository contains the source code of [Bi-HiSS Mamba 2D: A Spatially Enhanced Mamba Module for Earth Observation](https://openaccess.thecvf.com/content/CVPR2023/html/Tarasiou_ViTs_for_SITS_Vision_Transformers_for_Satellite_Image_Time_Series_CVPR_2023_paper.html).
 
-## Environment Configuration 
-
-Please see the DeepSatModels main [README](https://github.com/michaeltrs/DeepSatModels/blob/main/README.md) and [TSViT README](https://github.com/michaeltrs/DeepSatModels/blob/main/README_TSVIT.md) for further details.
-
-## Additional and Alternative Configuration
+## Environment and Additional Configuration
 
 It is sufficient to do
 
@@ -15,6 +11,8 @@ pip install -r requirements.txt
 ```
 
 If this does not work, start by running this command on the requirements.txt file from  [Exact](https://github.com/MiSsU-HH/Exact/blob/master/requirements.txt) and slowly add each required module using the code.
+
+Please see the DeepSatModels main [README](https://github.com/michaeltrs/DeepSatModels/blob/main/README.md) and [TSViT README](https://github.com/michaeltrs/DeepSatModels/blob/main/README_TSVIT.md) for further details.
 
 **Note**: 
 1. Mamba modules are crucial; ensure the wheel is downloaded by first installing PyTorch when the GPU is activated, so it can use CUDA. The rule of thumb is just to start with
