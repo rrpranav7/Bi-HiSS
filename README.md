@@ -1,6 +1,6 @@
 # :snake: [BMVC 2026 Submission] Repository for Bi-HiSS Mamba 2D: A Spatially Enhanced Mamba Module for Earth Observation
 
-This repository contains the source code of [Bi-HiSS Mamba 2D: A Spatially Enhanced Mamba Module for Earth Observation](https://openaccess.thecvf.com/content/CVPR2023/html/Tarasiou_ViTs_for_SITS_Vision_Transformers_for_Satellite_Image_Time_Series_CVPR_2023_paper.html).
+This repository contains the source code of Bi-HiSS Mamba 2D: A Spatially Enhanced Mamba Module for Earth Observation
 
 ## Environment and Additional Configuration
 
