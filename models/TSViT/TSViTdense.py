@@ -17,7 +17,7 @@ class BiHiSSMamba1D(nn.Module):
     Four scan directions for comprehensive 2D coverage:
     1. Hilbert forward: Space-filling curve preserving 2D locality
     2. Hilbert backward: Reversed Hilbert for bidirectional context
-    3. Snake H forward: Row-wise boustrophedon (horizontal continuity)
+    3. Snake H forward: Row-wise snake (horizontal continuity)
     4. Snake H backward: Reversed Snake H for bidirectional context
 
     All four outputs are fused to combine these perspectives.
@@ -68,7 +68,7 @@ class BiHiSSMamba1D(nn.Module):
 
     def get_snake_h_order(self, H, W, device):
         """
-        Get horizontal snake ordering (row-wise boustrophedon).
+        Get horizontal snake ordering (row-wise).
 
         Snake H pattern for 4x4:
          0  1  2  3  →
@@ -311,7 +311,12 @@ class BiHiSSMamba1D(nn.Module):
 
 class BiHiSSMamba2D(BiHiSSMamba1D):
     """
-    Main Bi-HiSS Mamba block.
+    Main Bi-HiSS Mamba 2D block.
+    Args:
+            x: [B, N, D] where N = H * W
+            grid_size: H = W (assumes square grid)
+    Returns:
+            [B, H, W, Dm] fused output combining all scan directions
     """
 
     def __init__(self, dim, d_state=64, d_conv=4, expand=2, dropout=0.):
@@ -671,10 +676,6 @@ class Transformer(nn.Module):
 class MicroConvFFN(nn.Module):
     """
     Ultra-lightweight Position-Enhanced FFN with SwiGLU gating.
-
-    More parameter-efficient than LiteConvFFN by using gated channel mixing
-    (SwiGLU) instead of standard expand-contract FFN. SwiGLU provides better
-    nonlinear expressiveness per parameter.
     """
 
     def __init__(self, dim, gate_mult=1, dropout=0., kernel_size=3):
