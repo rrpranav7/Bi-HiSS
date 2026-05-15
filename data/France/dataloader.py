@@ -63,7 +63,7 @@ class SatImDataset(Dataset):
         with open(img_name, 'rb') as handle:
             sample = pickle.load(handle, encoding='latin1')
 
-        if self.transform:    
+        if self.transform:
             sample = self.transform(sample)
 
         if self.return_paths:
