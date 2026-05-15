@@ -63,9 +63,7 @@ class SatImDataset(Dataset):
         with open(img_name, 'rb') as handle:
             sample = pickle.load(handle, encoding='latin1')
 
-        if self.transform:    from utils.config_files_utils import read_yaml, copy_yaml
-    import numpy as np
-    import matplotlib.pyplot as plt
+        if self.transform:    
             sample = self.transform(sample)
 
         if self.return_paths:
