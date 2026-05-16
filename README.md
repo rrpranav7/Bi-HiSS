@@ -4,6 +4,8 @@ This repository contains the source code of Bi-HiSS Mamba 2D: A Spatially Enhanc
 
 This model was run on one NVIDIA GH200 for each dataset. This can also be runned on one A100 for each dataset.
 
+Apart from the PyYAML version in the requirements.txt, you can use the latest version of each of the mentioned modules. I have experimented with running on RTX 5080, and it did work. 
+
 ## Environment and Additional Configuration
 
 It is sufficient to do
@@ -39,11 +41,9 @@ Do not specify the version and then do
 pip install mamba-ssm
 ```
 
-Please see the issues from mamba-ssm [GitHub](https://github.com/state-spaces/mamba/issues) to help you in downloading this.
+Please see the issues from mamba-ssm [GitHub](https://github.com/state-spaces/mamba/issues) to help you in downloading this. 
 
-2. Apart from the PyYAML version in the requirements.txt, you can use the latest version of each of the mentioned modules. I have experimented with running on RTX 5080, and it did work. To make it run on RTX 5080 please reduce the batch size all the way to 8 for PASTIS script.
-
-3. Although this paper talks about semantic segmentation, it can work for object classification. However, it is not configured properly in the initial script. Please see this [issue](https://github.com/michaeltrs/DeepSatModels/issues/18) for further details.
+2. Although this paper talks about semantic segmentation, it can work for object classification. However, it is not configured properly in the initial script. Please see this [issue](https://github.com/michaeltrs/DeepSatModels/issues/18) for further details.
 
 ## Dataset Preparation
 

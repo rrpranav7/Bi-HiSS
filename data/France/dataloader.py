@@ -6,7 +6,6 @@ from torch.utils.data import Dataset, DataLoader
 import torch.utils.data
 import pickle
 
-# Ignore warnings
 import warnings
 warnings.filterwarnings("ignore")
 
