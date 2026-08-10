@@ -1,4 +1,4 @@
-# :snake: [BMVC 2026 Submission] Repository for Bi-HiSS Mamba 2D: A Spatially Enhanced Mamba Module for Earth Observation
+# :snake: [WACV 2027 Submission] Repository for Bi-HiSS Mamba 2D: A Spatially Enhanced Mamba Module for Earth Observation
 
 This repository contains the source code of Bi-HiSS Mamba 2D: A Spatially Enhanced Mamba Module for Earth Observation.
 
