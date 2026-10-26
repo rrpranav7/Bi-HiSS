@@ -1,4 +1,4 @@
-# :snake: [WACV 2027 Submission] Repository for Bi-HiSS: Preserving 2D Spatial Dependencies under Mamba Serialization for Earth Observation
+# :snake: [IEEE Access 2027 Submission] Repository for Bi-HiSS: Preserving 2D Spatial Dependencies under Mamba Serialization for Earth Observation
 
 This repository contains the source code of Bi-HiSS Mamba 2D: A Spatially Enhanced Mamba Module for Earth Observation.
 
