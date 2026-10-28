@@ -23,7 +23,7 @@ python train_and_eval/segmentation_training_transf.py --config_file configs/**/C
 ```
 The configuration script for each model:
 1. MTSViT - Ablation for Feed Forward layer
-2. CMTSViT - Main Bi-HiSS Mamba 2D
+2. CMTSViT - Main Bi-HiSS
 3. DMTSViT - Ablation for other serialisation methods
 
 Please see the DeepSatModels main [README](https://github.com/michaeltrs/DeepSatModels/blob/main/README.md) and [TSViT README](https://github.com/michaeltrs/DeepSatModels/blob/main/README_TSVIT.md) for further details.
