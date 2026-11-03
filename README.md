@@ -59,7 +59,6 @@ T31TFM_1618 - https://github.com/michaeltrs/DeepSatModels/tree/main/data#t31tfm_
 
 | Dataset | Seed 1 | Seed 2 | Seed 3 |
 |---|---|---|---|
-| Germany (MTLCC) | 1 | 2 | 3 |
 | PASTIS (Fold 1) | 5 | 10 | 15 |
 | T31TFM-1618 | 0 | 1 | 2 |
 
