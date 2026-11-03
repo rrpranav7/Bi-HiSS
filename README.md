@@ -21,6 +21,8 @@ To train for semantic segmentation, execute the following command, replacing ** 
 ```bash
 python train_and_eval/segmentation_training_transf.py --config_file configs/**/CMTSViT.yaml --seeds * --gpu_ids 0,1
 ```
+Seeds is an optional argument. you do not need to use it. However, if you please use the seed table values.
+
 The configuration script for each model:
 1. MTSViT - Ablation for Feed Forward layer
 2. CMTSViT - Main Bi-HiSS
