@@ -16,13 +16,6 @@ pip install -r requirements.txt
 
 If this does not work, start by running this command on the requirements.txt file from  [Exact](https://github.com/MiSsU-HH/Exact/blob/master/requirements.txt) and slowly add each required module from our requirements.txt.
 
-To train for semantic segmentation, execute the following command, replacing ** with the appropriate directory names:
-
-```bash
-python train_and_eval/segmentation_training_transf.py --config_file configs/**/CMTSViT.yaml --seeds * --gpu_ids 0,1
-```
-Seeds is an optional argument, you do not need to use it. However, if you do please use the seed table values.
-
 The configuration script for each model:
 1. MTSViT - Ablation for Feed Forward layer
 2. CMTSViT - Main Bi-HiSS
@@ -54,13 +47,6 @@ PASTIS - https://github.com/michaeltrs/DeepSatModels/issues/2
 MTLCC (Germany) - https://github.com/michaeltrs/DeepSatModels/tree/main/data#mtlcc-dataset-germany
 
 T31TFM_1618 - https://github.com/michaeltrs/DeepSatModels/tree/main/data#t31tfm_1618-dataset-france
-
-## Random Seeds
-
-| Dataset | Seed 1 | Seed 2 | Seed 3 |
-|---|---|---|---|
-| PASTIS (Fold 1) | 5 | 10 | 15 |
-| T31TFM-1618 | 0 | 1 | 2 |
 
 ## Acknowledgement
 
