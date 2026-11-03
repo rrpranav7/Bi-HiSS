@@ -312,7 +312,7 @@ def _mean_std(values):
     arr = np.array([v for v in values if not (isinstance(v, float) and np.isnan(v))], dtype=np.float64)
     if arr.size == 0:
         return float("nan"), float("nan")
-    return float(arr.mean()), (float(arr.std(ddof=1)) if arr.size > 1 else 0.0)
+    return float(arr.mean()), (float(arr.std(ddof=0)) if arr.size > 1 else 0.0)
 
 
 def _print_multi_seed_table(config_file, seeds, runs):
